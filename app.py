@@ -11,7 +11,7 @@ JOBS=[
   },
   {
      'id':2,
-     'title':'Python Developer',
+     'title':'Flutter Developer',
      'location':'Ernakulam, India',
      'salary':'Rs. 15,00,000'
   },
@@ -23,7 +23,7 @@ JOBS=[
   },
   {
     'id':4,
-    'title':'DevOps Engineer',
+    'title':'Software Engineer',
     'location':'Mumbai, India',
     
   },
