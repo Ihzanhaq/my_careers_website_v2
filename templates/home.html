@@ -16,15 +16,20 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
+    <h1 class='text-center mt-2 mb-4''>Dream Careers</h1>
+    <img class="img-fluid mb-2" id="banner" src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
     <div class="container">
-      <h1 class='text-center mt-2 mb-4''>Dream Careers</h1>
-      <img class="img-fluid" id="banner" src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+      
       <h2 class='text-center mt-2 mb-4''>
         About Dream Careers
       </h2>
-      <p class="lead">
+      <div class='row' style='margin-bottom:16px;'>
+      <p class="lead col-md-6">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+        <img src="/static/people.jpg" class='d-none d-md-block col-md-6' style="height:320; border-radius:4px;""></img>
+      </div>
       <h2 class="text-center mt-2 mb-4"">
         Job Openings
       </h2>
@@ -34,8 +39,8 @@
         {% endfor %}
       </div>
       <div class="text-center"">
-      <button class="btn btn-primary btn-lg"">Contact Us</button>
-      <p class="mt-4"">Copyrights@2025</p>
+      <a href="mailto:ihzanhaq@gmail.com?subject=Questions%20about%20opening&body=My%20name%20%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20question%20%3A%20%3Center%20question%20here%3E" class="btn btn-primary btn-lg float-right"">Contact Us</a>
     </div>
+      {% include 'footer.html' %}
   </body>
 </html>
